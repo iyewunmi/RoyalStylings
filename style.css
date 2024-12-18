@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:''spartan' sans-serif; 
+}   
+h1 {
+   font-size: 50px;
+   line-height: 1.5;
+   color: black;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 1.5;
+    color: black;   
+}
+
+h4{
+    font-size: 20px;
+    color: black;
+}
+
+h6{
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+
+P {
+font-size: 16PX;
+color: black;
+margin: 15PX 0 20PX 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color:yellow;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 0.2s;
+}
+
+body{
+    width: 100%;
+}
+
+/*******************Header*****************/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 60px;
+    background-color:rgba(193, 68, 139, 0.689);
+    box-shadow: 2px 10px 10px#2c2c2d37;
+    z-index: 9;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 5px 10px;
+    position: relative;
+}
+
+#navbar li a,
+#navbar li a.active {
+    text-decoration: none;
+    font-size: small;
+    font-weight: 700;
+    color: #000;
+    transition: 1s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgba(156, 16, 96, 0.953);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content:"";
+  width: 40px;
+  height: 2px;
+  background-color: rgb(156, 16, 96, 0.953);
+  position: absolute;
+  bottom: -1px;
+  left: 10px;
+}
+
+/****************home page***************/
+#hero {
+    background-image: url(images/kidssmiling.jpeg);
+    position:relative;
+    height:80vh;
+    width: 100%;
+    padding: 0 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero h4 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: rgb(246, 59, 190);
+    font-size: 30px;
+    text-shadow: 5px 5px 5px rgb(255, 255, 253);
+}
+
+#hero h2 {
+color: black;
+font-size: 40px;
+text-shadow: 5px 5px 5px rgb(255, 255, 253);
+text-align: center;
+}
+
+#hero h1 {
+    color: rgb(82, 4, 106);  
+    font-size: 30px;   
+    font-style: italic;
+    text-shadow: 5px 5px 5px rgb(255, 255, 253);
+    text-align: center;
+}
+#hero p {
+    color: black;
+    font-size: large;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px rgb(255, 255, 253);
+    text-align: center;
+}
+
+#hero button {
+   background-color: rgb(48, 6, 53);
+   color: white;
+   border-radius: 5px;
+   border: 0;
+   cursor: pointer;
+   font-size: 20px;
+   font-weight: 700;
+   padding: 10px 30px 10px 30px;
+   margin-top: 30px;
+   position: absolute;
+   left:450px
+}
+
+ #hero button:hover {
+    background-color: rgb(185, 34, 160);
+    color: rgb(48, 6, 53);
+ }
+/*********************** DONATE OPTION **************/
+
+#options {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(88, 2, 81);
+}
+
+#options h3 {
+    font-size: 25px;
+}
+
+#features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#features h6 {
+    text-align: center;
+    color: rgb(88, 2, 81);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#features .fe-box {
+    width: 10%;
+    min-width: 150px;
+    padding: 20px 20px;
+    height: 200px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #e4dddd;
+    box-shadow: 10px 10px 50px blueviolet;
+}
+
+#features .fe-box:hover {
+    box-shadow: 10px 10px 10px rgba(156, 16, 96, 0.953);
+}
+
+#features .fe-box img {
+    width:100%;
+    border-radius:20px;
+}
+
+#category {
+    text-align: center;
+    padding-top: 40px;
+}
+
+#category h2{
+    color: rgba(156, 16, 96, 0.953);
+}
+
+#category .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    flex-wrap: wrap;
+
+}
+
+#category .pro {
+    width: 20%;
+    min-width: 180px;
+    padding: 10px 10px;
+    border: 1px solid #e4dddd;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 6px 6px 10px blueviolet;
+    margin: 17px 8px;
+    position: relative;
+    transition: 0.2s ease;
+
+}
+
+#category .pro img {
+    width: 100%;
+    border-radius: 25px;
+}
+#category .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+#category .pro .des span {
+    color: blueviolet;
+    font-size: 15px;
+}
+
+#category .pro .des h5 {
+    color: black;
+    font-size: 15px;
+    padding-top: 7px;
+}
+#category .pro .des p{
+    font-size: 15px;
+    color: rgba(31, 3, 58, 0.629);
+    font-weight: 200;
+}
+
+#category .pro .des h6 {
+    padding-top: none;
+    font-size: 17px;
+    color: #000;
+    font-weight: 700;
+}
+#category .donate a{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: none;
+    font-weight: 500;
+    color: rgb(50, 5, 72);
+    border: 1px solid blueviolet;
+    bottom: 10px;
+    right: 30px;
+}
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/yellow.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+    background-size: 100%;
+    margin-top: 40px;
+}
+
+#banner h4{
+    font-size: 25px;
+}
+
+#banner h2{
+    font-size:45px;
+    text-shadow: yellow 5PX 5PX 5PX;
+}
+
+#banner h2 span {
+    color: white;
+    text-shadow: #000 5px 5px 5px;
+}
+#banner button:hover {
+    background: rgb(255, 253, 253);
+    color:rgb(3, 3, 3);
+}
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(image2/suitcase);
+    min-width: 500px;
+    height: 50vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    padding:20px;
+}
+
+#sm-banner .banner-box2 {
+    background-image: url(image2/3banner.jpg);
+    min-width: 500px;
+    height: 50vh;
+}
+#sm-banner .banner-box3 {
+    background-image: url(image2/2banner.jpg);
+    min-width: 500px;
+    height: 50vh;
+}
+#sm-banner .banner-box4 {
+    background-image: url(image2/sales.jpg);
+    min-width: 500px;
+    height: 50vh;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(244, 198, 14, 0.942);
+    margin-top: 70px;
+}
+#newsletter h4{
+    text-decoration: underline;
+    font-size: px;
+    font-weight: 700;
+}
+#newsletter span {
+    color: white;
+    text-shadow: #000 5px 5px 5px;
+}
+#newsletter .form {
+    display: flex;
+    width: 30%;
+}
+#newsletter input {
+    height: 10vh;
+    
+}
